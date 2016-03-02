@@ -9,8 +9,8 @@ var visual_recognition = watson.visual_recognition({
 });
 
 var params = {
-  images_file: fs.createReadStream('./cpu.jpg'),
-  //classifier_ids: fs.readFileSync('./classifier.json')
+  images_file: fs.createReadStream('./test.jpg'),
+  classifier_ids: fs.readFileSync('./classifier.json')
 };
 
 visual_recognition.classify(params, 
